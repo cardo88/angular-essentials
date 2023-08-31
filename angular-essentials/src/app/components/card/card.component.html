@@ -8,5 +8,11 @@
   margin:2rem;
   padding: 1rem;
   ">
-  <ng-content/>
+
+  <ng-content />
+  <div *ngIf="showRating">
+    <span *ngFor="let item of [].constructor(rating); let i = index">⭐️</span>
+  </div>
+  <div *ngIf="!showRating">No rating available... </div>
+  <app-counter [text]="'likes 👍'" [count]="2" />
 </div>

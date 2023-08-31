@@ -1,23 +1,28 @@
 <style>
-/* we can setup style here too.. */
+  /* we can setup style here too.. */
 </style>
 
 <app-container>
-  <app-card>
+  <app-card [showRating]="true" [rating]="3">
     <h1>First Card 🥳</h1>
     <p>Running our first card 🚀</p>
     <hr>
   </app-card>
-  <app-card>
+  <app-card [showRating]="true" [rating]="5">
     <h1>Second Card 😎</h1>
     <p>Running our second card 🚀</p>
     <hr>
   </app-card>
-  <app-card>
+  <app-card [showRating]="false" [rating]="3">
     <h1>Third Card 🤪</h1>
     <p>Running our third card 🚀</p>
     <hr>
   </app-card>
+  <div [ngSwitch]="condition">
+    <div *ngSwitchCase="'rat'">First Condition 🐀</div>
+    <div *ngSwitchCase="'lion'">Second Condition 🦁</div>
+    <div *ngSwitchDefault>Default 🦆</div>
+  </div>
 </app-container>
 
 
