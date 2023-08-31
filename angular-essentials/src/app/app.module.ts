@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component'
 import { ContainerComponent } from './components/container/container.component';
 import { LogService } from './services/log.service';
+import { CounterComponent } from './components/counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContainerComponent,
     CardComponent,
+    CounterComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,4 +22,5 @@ import { LogService } from './services/log.service';
   providers: [LogService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

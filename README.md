@@ -17,4 +17,6 @@ ng serve
 ng generate component [component-name]
 ng generate component [relative-route]/[component-name]
 
-
+## creating new service using angular cli
+ng generate service [service-name]
+ng generate service [relative-route]/[service-name]
