@@ -1,14 +1,4 @@
-<div style="background-color:
-  rgb(54, 48, 48); 
-  width: 250px; 
-  height: 40vh;
-  border-radius: 10px;
-  border: solid violet  2px;
-  color:white;
-  margin:2rem;
-  padding: 1rem;
-  ">
-
+<div class="card">
   <ng-content />
   <div *ngIf="showRating">
     <span *ngFor="let item of [].constructor(rating); let i = index">⭐️</span>
