@@ -3,6 +3,9 @@
 ## installing angular
 npm install -g @angular/cli
 
+## checking angular is installed
+ng v
+
 ## recommended vsc plug-in
 Angular Language Service
 
