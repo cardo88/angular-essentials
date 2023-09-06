@@ -1,0 +1,36 @@
+<nav>
+  <ul>
+    <li>
+      <h1> Card Votes App </h1>
+    </li>
+    <li>
+      <span [ngSwitch]="condition">
+        <p class="animalIcon" *ngSwitchCase="'rat'">First Condition 🐀</p>
+        <p class="animalIcon" *ngSwitchCase="'lion'">Second Condition 🦁</p>
+        <p class="animalIcon" *ngSwitchDefault>Default 🦆</p>
+      </span>
+    </li>
+    <li>
+      <button routerLink="/logout">
+        Logout
+      </button>
+    </li>
+  </ul>
+</nav>
+<app-container>
+  <app-card [showRating]="true" [rating]="3">
+    <h1>First Card 🥳</h1>
+    <p>Running our first card 🚀</p>
+    <hr>
+  </app-card>
+  <app-card [showRating]="true" [rating]="5">
+    <h1>Second Card 😎</h1>
+    <p>Running our second card 🚀</p>
+    <hr>
+  </app-card>
+  <app-card [showRating]="false" [rating]="3">
+    <h1>Third Card 🤪</h1>
+    <p>Running our third card 🚀</p>
+    <hr>
+  </app-card>
+</app-container>

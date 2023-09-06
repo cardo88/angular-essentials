@@ -8,6 +8,5 @@ export class LogService {
     const date: Date = new Date();
     console.log(`${date} - ${message}`)
   }
-
   constructor() { }
 }
