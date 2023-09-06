@@ -12,7 +12,7 @@ export class ContainerComponent {
   }
 
   testLog(): void {
-    this.logger.log("My fist log service execution 😛");
+    this.logger.log("My first log service execution 😛");
   };
 
   ngOnInit(): void {

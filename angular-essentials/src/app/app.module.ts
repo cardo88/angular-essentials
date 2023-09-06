@@ -7,6 +7,10 @@ import { CardComponent } from './components/card/card.component'
 import { ContainerComponent } from './components/container/container.component';
 import { LogService } from './services/log.service';
 import { CounterComponent } from './components/counter/counter.component';
+import { LoginComponent } from './components/login/login.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { HomeComponent } from './components/home/home.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +18,10 @@ import { CounterComponent } from './components/counter/counter.component';
     ContainerComponent,
     CardComponent,
     CounterComponent,
+    LoginComponent,
+    LogoutComponent,
+    HomeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
